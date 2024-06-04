@@ -1,0 +1,106 @@
+.contact-section {
+  background-color: #000;
+  color: #fff;
+  padding: 80px 20px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+  color: #f08804; /* Third color */
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;  
+}
+
+.btn-color{
+  color: var(--accent-color);
+  background-color: #fff !important;
+}
+
+.btn-color:hover{
+  color: var(--accent-color) !important;
+}
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-map {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #f08a04af; /* Third color */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] ,
+textarea,select{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #000000 !important; /* Black */
+  color: #fff !important; /* White */
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder,
+.form-group select::placeholder {
+    color: #999999; /* Your desired placeholder color */
+}
+
+
+
+
+textarea {
+  resize: vertical;
+  background-color: #000 ;
+  color: #fff;
+}
+
+select{
+  background-color: #000  ;
+  color: #fff;
+}
+.btn-submit {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f08804; /* Third color */
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #ffad5a; /* Lighter shade of the third color */
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+  }
+}
+
